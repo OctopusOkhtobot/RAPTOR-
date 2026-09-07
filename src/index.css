@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Space Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+
+  [dir="rtl"], [dir="rtl"] body {
+    font-family: 'Cairo', 'Segoe UI', Tahoma, sans-serif;
+  }
+
+  code, pre, .font-mono {
+    font-family: 'JetBrains Mono', monospace;
+  }
+}
+
+/* Custom dot grid background matching Clean Minimalism theme */
+.bg-dot-grid {
+  background-image: radial-gradient(#ffffff 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+/* Custom glow and schematic pulse */
+@keyframes flow-pulse {
+  0%, 100% { opacity: 0.3; }
+  50% { opacity: 0.9; }
+}
+
+.animate-flow {
+  animation: flow-pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}

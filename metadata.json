@@ -1,0 +1,6 @@
+{
+  "name": "SpaceX Raptor Engine Explorer",
+  "description": "Interactive bilingual explorer and labeled component diagrams for SpaceX Raptor 1, 2, and 3 rocket engines with technical specifications.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
